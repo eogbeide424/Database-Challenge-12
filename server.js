@@ -41,6 +41,8 @@ const db = mysql.createConnection({
         }
      });
 
+
+
      const viewAllDep = () => {
         db.query('SELECT * FROM department',function(err,results) {
             console.log('Selected all from department ', results);
